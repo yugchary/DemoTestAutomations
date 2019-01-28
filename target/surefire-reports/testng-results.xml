@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LifeCo Insurance Company Test Automation" duration-ms="113343" started-at="2019-01-28T14:55:26Z" finished-at="2019-01-28T14:57:19Z">
+    <groups>
+    </groups>
+    <test name="LifeCo Insurance Company Sanity Test" duration-ms="113343" started-at="2019-01-28T14:55:26Z" finished-at="2019-01-28T14:57:19Z">
+      <class name="com.lco.qa.testcases.OnePersonQuoteTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b]" name="setup" is-config="true" duration-ms="7097" started-at="2019-01-28T14:55:26Z" finished-at="2019-01-28T14:55:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b]" name="homePageTitleTest" duration-ms="23" started-at="2019-01-28T14:55:33Z" finished-at="2019-01-28T14:55:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b]" name="tearDown" is-config="true" duration-ms="766" started-at="2019-01-28T14:55:33Z" finished-at="2019-01-28T14:55:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageTitleTest status=SUCCESS method=OnePersonQuoteTest.homePageTitleTest()[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b]" name="setup" is-config="true" duration-ms="5994" started-at="2019-01-28T14:55:34Z" finished-at="2019-01-28T14:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="onePersonQuoteTest()[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b]" name="onePersonQuoteTest" duration-ms="9448" started-at="2019-01-28T14:55:40Z" finished-at="2019-01-28T14:55:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onePersonQuoteTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b]" name="tearDown" is-config="true" duration-ms="725" started-at="2019-01-28T14:55:49Z" finished-at="2019-01-28T14:55:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=onePersonQuoteTest status=SUCCESS method=OnePersonQuoteTest.onePersonQuoteTest()[pri:0, instance:com.lco.qa.testcases.OnePersonQuoteTest@1a38c59b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lco.qa.testcases.OnePersonQuoteTest -->
+      <class name="com.lco.qa.testcases.ProductSelectionTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="setup" is-config="true" duration-ms="13375" started-at="2019-01-28T14:55:50Z" finished-at="2019-01-28T14:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="FinalizeProduct()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="FinalizeProduct" duration-ms="26408" started-at="2019-01-28T14:56:03Z" finished-at="2019-01-28T14:56:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinalizeProduct -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-01-28T14:56:30Z" finished-at="2019-01-28T14:56:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FinalizeProduct status=SUCCESS method=ProductSelectionTest.FinalizeProduct()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="setup" is-config="true" duration-ms="18756" started-at="2019-01-28T14:56:30Z" finished-at="2019-01-28T14:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ProductSelectionPageTitleTest()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="ProductSelectionPageTitleTest" duration-ms="13" started-at="2019-01-28T14:56:48Z" finished-at="2019-01-28T14:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSelectionPageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-28T14:56:48Z" finished-at="2019-01-28T14:56:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProductSelectionPageTitleTest status=SUCCESS method=ProductSelectionTest.ProductSelectionPageTitleTest()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="setup" is-config="true" duration-ms="13063" started-at="2019-01-28T14:56:48Z" finished-at="2019-01-28T14:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="selectProduct()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="selectProduct" duration-ms="1615" started-at="2019-01-28T14:57:02Z" finished-at="2019-01-28T14:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="setup" is-config="true" duration-ms="14823" started-at="2019-01-28T14:57:03Z" finished-at="2019-01-28T14:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-28T14:57:03Z" finished-at="2019-01-28T14:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectProduct status=SUCCESS method=ProductSelectionTest.selectProduct()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="validateOnePersonQuoteInfo()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="validateOnePersonQuoteInfo" duration-ms="1215" started-at="2019-01-28T14:57:18Z" finished-at="2019-01-28T14:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOnePersonQuoteInfo -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-28T14:57:19Z" finished-at="2019-01-28T14:57:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateOnePersonQuoteInfo status=SUCCESS method=ProductSelectionTest.validateOnePersonQuoteInfo()[pri:0, instance:com.lco.qa.testcases.ProductSelectionTest@7f77e91b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lco.qa.testcases.ProductSelectionTest -->
+    </test> <!-- LifeCo Insurance Company Sanity Test -->
+  </suite> <!-- LifeCo Insurance Company Test Automation -->
+</testng-results>

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LifeCo Insurance Company Test Automation" verbose="1">
+	<listeners>
+		<listener
+			class-name="com.qa.ExtentReporterListener.ExtentReportNG" />
+	</listeners>
+	<test name="LifeCo Insurance Company Sanity Test">
+
+
+
+		<classes>
+			<!-- <class name="com.lco.qa.testcases.LoginPageTest" /> 
+			<class name="com.lco.qa.testcases.AfterTestExtent" />
+			<class name="com.lco.qa.testcases.BeforeTestExtent" /> 
+			
+			
+			-->
+			<class name="com.lco.qa.testcases.OnePersonQuoteTest" />
+			<class name="com.lco.qa.testcases.ProductSelectionTest" />
+			
+			
+			
+
+		</classes>
+
+	</test>
+
+</suite>

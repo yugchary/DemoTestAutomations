@@ -1,0 +1,5 @@
+LoadLibrary() call failed: 126
+2019-01-28 16:36:05.823 [1176] [OERROR] [Explorer Probe] [McAfee::DLP::Chrome::ssl_hooking::ssl_hooking_init_thread] No valid offset is available for SSL_free. Current Chrome version: 70.0.3538.67
+2019-01-28 16:36:06.825 [1176] [OERROR] [Explorer Probe] [McAfee::DLP::Chrome::ssl_hooking::ssl_hooking_init_thread] No valid offset is available for SSL_free. Current Chrome version: 70.0.3538.67
+2019-01-28 16:36:07.829 [1176] [OERROR] [Explorer Probe] [McAfee::DLP::Chrome::ssl_hooking::ssl_hooking_init_thread] No valid offset is available for SSL_free. Current Chrome version: 70.0.3538.67
+2019-01-28 16:36:08.868 [1176] [OERROR] [Explorer Probe] [McAfee::DLP::Chrome::ssl_hooking::ssl_hooking_init_thread] No valid offset is available for SSL_free. Current Chrome version: 70.0.3538.67
