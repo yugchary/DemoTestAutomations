@@ -15,9 +15,15 @@ public class OnePersonGatherInfoPage extends TestBase {
 	
 	//Page Factory - OR
 	
-		
-	@FindBy(xpath="//p[contains(text(),'One person')]")
+	@FindBy(xpath="//p[contains(text(),'One person')]")	
+	//@FindBy(css=".active-image")
+	//@FindBy(xpath="//div[@class='c-select-one-person active col-sm-3']//p[contains(text(),'One person')]")
+	//@FindBy(xpath="//div[@class='c-select-one-person active col-sm-3']//p")
+	//@FindBy(xpath="//img[@class='active-image']")
 	WebElement onePImg;	
+	
+	
+	
 	
 	@FindBy(name="first-applicant-name-0")
 	WebElement first_applicant_name_0;

@@ -26,7 +26,7 @@ public class TemplateTest extends TestBase {
 	TemplatePage templatePage;
 	ExtentTest extentTest;
 
-	ExtentReports extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
+	
 
 	public TemplateTest() {
 		super();
@@ -40,10 +40,11 @@ public class TemplateTest extends TestBase {
 
 	@Test
 	public void loginPageTitleTest() {
-		
+		log.info("****************************** Starting loginPageTitleTest test cases execution *****************************************");
 		extentTest = extent.startTest("loginPageTitleTest");
 		String title = templatePage.validateLoginPageTitle();
 		Assert.assertEquals(title, "LifeCo Insurance Company");
+		log.info("****************************** Ending loginPageTitleTest test cases execution *****************************************");
 	}
 
 	@Test

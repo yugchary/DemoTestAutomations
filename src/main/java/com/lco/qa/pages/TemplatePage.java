@@ -12,6 +12,9 @@ public class TemplatePage extends TestBase{
 		@FindBy(xpath="")
 		WebElement xyz;
 		
+		@FindBy(css=".test")
+		WebElement selectItem;
+		
 	//Initialize the Page objects
 	public TemplatePage(){
 		PageFactory.initElements(driver, this);

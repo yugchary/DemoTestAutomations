@@ -48,21 +48,21 @@ public class TestBase {
 	public static void initialization() {
 		
 		String BrowserType = prop.getProperty("browserType");
+		String BinariesLoc = prop.getProperty("binariesLocation");
 
-		if (BrowserType.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Yug\\From Old Laptop\\From LoanLap\\Yug\\Selenium\\chromedriver.exe");
-			// WebDriver driver = new ChromeDriver();
+		if (BrowserType.equalsIgnoreCase("CHROME")) {
+			//System.setProperty("webdriver.chrome.driver","C:\\Yug\\From Old Laptop\\From LoanLap\\Yug\\Selenium\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",BinariesLoc+"chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (BrowserType.equalsIgnoreCase("IE")) {
 
-			System.setProperty("webdriver.ie.driver",
-					"C:\\Yug\\From Old Laptop\\From LoanLap\\Yug\\Selenium\\IEDriverServer.exe");
+			//System.setProperty("webdriver.ie.driver","C:\\Yug\\From Old Laptop\\From LoanLap\\Yug\\Selenium\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver",BinariesLoc+"IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		} else if (BrowserType.equalsIgnoreCase("FF")) {
 
-			System.setProperty("webdriver.gecko.driver",
-					"C:\\Yug\\From Old Laptop\\From LoanLap\\Yug\\Selenium\\geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver","C:\\Yug\\From Old Laptop\\From LoanLap\\Yug\\Selenium\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",BinariesLoc+"geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		}
@@ -74,7 +74,7 @@ public class TestBase {
 		e_driver.register(eventListener);
 		driver = e_driver;
 		
-		//driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Testutil.pageLoadTimeout, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Testutil.implicitlyWait, TimeUnit.SECONDS);
