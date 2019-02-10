@@ -9,15 +9,77 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">LifeCo Insurance Company Test Automation</th></tr>
-<tr><td><a href="#t0">LifeCo Insurance Company Sanity Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">253,172</td><td></td><td></td></tr>
+<tr><td><a href="#t0">LifeCo Insurance Company Sanity Test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">834,994</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LifeCo Insurance Company Test Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LifeCo Insurance Company Sanity Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.lco.qa.testcases.OnePersonQuoteTest</td><td><a href="#m0">homePageTitleTest</a></td><td rowspan="1">1548762298152</td><td rowspan="1">24</td></tr><tr class="passedeven"><td><a href="#m1">onePersonQuoteTest</a></td><td rowspan="1">1548762301604</td><td rowspan="1">7878</td></tr><tr class="passedodd"><td rowspan="4">com.lco.qa.testcases.ProductSelectionTest</td><td><a href="#m2">FinalizeProduct</a></td><td rowspan="1">1548762320683</td><td rowspan="1">188342</td></tr><tr class="passedodd"><td><a href="#m3">ProductSelectionPageTitleTest</a></td><td rowspan="1">1548762520251</td><td rowspan="1">14</td></tr><tr class="passedodd"><td><a href="#m4">selectProduct</a></td><td rowspan="1">1548762531320</td><td rowspan="1">3200</td></tr><tr class="passedodd"><td><a href="#m5">validateOnePersonQuoteInfo</a></td><td rowspan="1">1548762545687</td><td rowspan="1">1548</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LifeCo Insurance Company Test Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LifeCo Insurance Company Sanity Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.lco.qa.testcases.ProductSelectionTest</td><td><a href="#m0">FinalizeProduct</a></td><td rowspan="1">1549557993223</td><td rowspan="1">360844</td></tr><tr class="failedeven"><td><a href="#m1">selectProduct</a></td><td rowspan="1">1549558394251</td><td rowspan="1">360745</td></tr><tr><th colspan="4">LifeCo Insurance Company Sanity Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.lco.qa.testcases.OnePersonQuoteTest</td><td><a href="#m2">homePageTitleTest</a></td><td rowspan="1">1549557960361</td><td rowspan="1">43</td></tr><tr class="passedeven"><td><a href="#m3">onePersonQuoteTest</a></td><td rowspan="1">1549557968136</td><td rowspan="1">8590</td></tr><tr class="passedodd"><td rowspan="2">com.lco.qa.testcases.ProductSelectionTest</td><td><a href="#m4">ProductSelectionPageTitleTest</a></td><td rowspan="1">1549558376697</td><td rowspan="1">19</td></tr><tr class="passedodd"><td><a href="#m5">validateOnePersonQuoteInfo</a></td><td rowspan="1">1549558780882</td><td rowspan="1">6500</td></tr></tbody>
 </table>
-<h2>LifeCo Insurance Company Sanity Test</h2><h3 id="m0">com.lco.qa.testcases.OnePersonQuoteTest#homePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.lco.qa.testcases.OnePersonQuoteTest#onePersonQuoteTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.lco.qa.testcases.ProductSelectionTest#FinalizeProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.lco.qa.testcases.ProductSelectionTest#ProductSelectionPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.lco.qa.testcases.ProductSelectionTest#selectProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LifeCo Insurance Company Sanity Test</h2><h3 id="m0">com.lco.qa.testcases.ProductSelectionTest#FinalizeProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;c-button-default circular hidden-xs active btn btn-default&apos;]&quot;}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;AKKYU01-5520&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\akkyu01\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 2b78f17922bdf643ecd0a3f854e2e284
+*** Element info: {Using=xpath, value=//button[@class=&apos;c-button-default circular hidden-xs active btn btn-default&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy5.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.lco.qa.pages.ProductSelectionPage.ProductSelection(ProductSelectionPage.java:77)
+	at com.lco.qa.testcases.ProductSelectionTest.FinalizeProduct(ProductSelectionTest.java:76)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.lco.qa.testcases.ProductSelectionTest#selectProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;c-button-default circular hidden-xs active btn btn-default&apos;]&quot;}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;AKKYU01-5520&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\akkyu01\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: ec807a6ce0d4d812c417450f54f53420
+*** Element info: {Using=xpath, value=//button[@class=&apos;c-button-default circular hidden-xs active btn btn-default&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy5.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.lco.qa.pages.ProductSelectionPage.ProductSelection(ProductSelectionPage.java:77)
+	at com.lco.qa.testcases.ProductSelectionTest.selectProduct(ProductSelectionTest.java:67)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.lco.qa.testcases.OnePersonQuoteTest#homePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.lco.qa.testcases.OnePersonQuoteTest#onePersonQuoteTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.lco.qa.testcases.ProductSelectionTest#ProductSelectionPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">com.lco.qa.testcases.ProductSelectionTest#validateOnePersonQuoteInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -9,6 +9,7 @@ import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.formula.functions.Rows;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -67,69 +68,52 @@ public class Testutil extends TestBase {
 	public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {
 
 		String[][] tabArray = null;
+		Xlsutil xl = new Xlsutil(TESTDATA_SHEET_PATH);
 
-		try {
+		int startRow = 2;
 
-			FileInputStream ExcelFile = new FileInputStream(FilePath);
+		int startCol = 1;
 
-			// Access the required test data sheet
+		int ci, cj;
 
-			book = new XSSFWorkbook(ExcelFile);
+		//int totalRows = sheet.getLastRowNum();
+		
+		int totalRows = xl.getRowCount(SheetName);
 
-			sheet = book.getSheet(SheetName);
+		// you can write a function as well to get Column count
 
-			int startRow = 1;
+		//int totalCols = 3;
+		
+		int totalCols = xl.getColumnCount(SheetName);
+		
+		//int totalCols = sheet.getCol
 
-			int startCol = 1;
+		tabArray = new String[totalCols][totalRows-1];
 
-			int ci, cj;
+		ci = 0;
 
-			int totalRows = sheet.getLastRowNum();
+		for (int i = startRow; i <= totalRows; i++, ci++) {
 
-			// you can write a function as well to get Column count
+			cj = 0;
 
-			int totalCols = 2;
+			for (int j = startCol; j <= totalCols; j++, cj++) {
 
-			tabArray = new String[totalRows][totalCols];
+				//tabArray[ci][cj] = getCellData(i, j);
+				
+				tabArray[ci][cj] = xl.getCellData(SheetName, j-1, i);
+				
 
-			ci = 0;
-
-			for (int i = startRow; i <= totalRows; i++, ci++) {
-
-				cj = 0;
-
-				for (int j = startCol; j <= totalCols; j++, cj++) {
-
-					tabArray[ci][cj] = getCellData(i, j);
-
-					System.out.println(tabArray[ci][cj]);
-
-				}
+				System.out.println(tabArray[ci][cj]);
 
 			}
-
-		}
-
-		catch (FileNotFoundException e) {
-
-			System.out.println("Could not read the Excel sheet");
-
-			e.printStackTrace();
-
-		}
-
-		catch (IOException e) {
-
-			System.out.println("Could not read the Excel sheet");
-
-			e.printStackTrace();
 
 		}
 
 		return (tabArray);
 
 	}
-
+	
+	
 	
 	
 	public static String getCellData(int RowNum, int ColNum) throws Exception {
@@ -145,8 +129,12 @@ public class Testutil extends TestBase {
 		 return "";
 		 
 		 }else{
+			 
+			
 		 
-		 String CellData = Cell.getStringCellValue();
+		 //String CellData = Cell.getStringCellValue();
+		 
+		 String CellData = Cell.getRawValue();
 		 
 		 return CellData;
 		 
@@ -161,8 +149,8 @@ public class Testutil extends TestBase {
 		 
 		 }
 	
-	 
-	 
+	
+	
 
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

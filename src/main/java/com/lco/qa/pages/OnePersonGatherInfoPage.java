@@ -8,12 +8,18 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.lco.qa.base.TestBase;
+import com.lco.qa.util.Testutil;
 
 public class OnePersonGatherInfoPage extends TestBase {
 	
 	//Page Factory - OR
+	
+
 	
 	@FindBy(xpath="//p[contains(text(),'One person')]")	
 	//@FindBy(css=".active-image")
@@ -39,7 +45,7 @@ public class OnePersonGatherInfoPage extends TestBase {
 	@FindBy(xpath="//input[@placeholder='MM/DD/YYYY']")
 	WebElement DOB;
 	
-	@FindBy(xpath="//div[@class='react-datepicker__week']//div[@aria-label='day-12']")
+	//@FindBy(xpath="//div[@class='react-datepicker__week']//div[@aria-label='day-" + days + "']")
 	WebElement dateSelect;
 	
 	
@@ -82,10 +88,47 @@ public class OnePersonGatherInfoPage extends TestBase {
 		
 	}
 	
+	
+	
+
+	
+	
 	//Actions:
 	
 	public String validateLoginPageTitle() {
 		return driver.getTitle();
+	}
+	
+	
+	public ProductSelectionPage Quote11(String FirstName, String DateOfBirth) {
+		
+		
+		onePImg.click();
+		
+		first_applicant_name_0.sendKeys(FirstName);
+		fradioBtn.click();
+		
+		DOB.sendKeys(DateOfBirth);
+		String[] array = DateOfBirth.split("/", -1);
+		
+		String day = array[1];
+		day= day.replaceFirst("^0", "");
+		
+		driver.findElement(By.xpath("//div[@class='react-datepicker__week']//div[@aria-label='day-" + day + "']")).click();
+		//dateSelect.click();
+		
+				
+		stateValue.sendKeys("Alaska");
+		selectItem.click();		
+		
+		rateHealth.sendKeys("Excellent");
+		selectItem.click();	
+		
+		tobUseY.click();
+		nextBtn.click();
+		
+		return new ProductSelectionPage();
+		
 	}
 	
 	

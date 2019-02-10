@@ -1,6 +1,13 @@
 package com.lco.qa.testcases;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -17,6 +24,7 @@ import org.testng.annotations.Test;
 import com.lco.qa.base.TestBase;
 import com.lco.qa.pages.DemoPage;
 import com.lco.qa.util.Testutil;
+import com.lco.qa.util.Xlsutil;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -38,7 +46,7 @@ public class DemoTest extends TestBase {
 		demoPage = new DemoPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void loginPageTitleTest() {
 		
 		
@@ -50,8 +58,20 @@ public class DemoTest extends TestBase {
 	}
 
 	@Test
-	public void loginTest() {
-		demoPage = demoPage.SampleTest(prop.getProperty("username"), prop.getProperty("password"));
+	public void loginTest() throws ParseException {
+		//demoPage = demoPage.SampleTest(prop.getProperty("username"), prop.getProperty("password"));
+		
+		String DateOfBirth="31-12-1998";
+		
+		
+		
+		DateFormat  formatter = new SimpleDateFormat("dd/MM/YYYY");
+        
+        
+        Date date = formatter.parse(DateOfBirth);
+        //System.out.println(date);
+        System.out.println(formatter.format(date));
+		
 	}
 
 	

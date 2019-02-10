@@ -8,6 +8,7 @@
     <classes>
       <class name="com.lco.qa.testcases.ProductSelectionTest">
         <methods>
+          <include name="selectProduct"/>
           <include name="tearDown"/>
           <include name="FinalizeProduct"/>
           <include name="setup"/>
